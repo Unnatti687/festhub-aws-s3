@@ -10,7 +10,7 @@ http://trial-festhub.s3-website.ap-south-1.amazonaws.com
 
 ## 🚀 Features
 
-* 📅 Browse upcoming college fests
+* 📅 Browse upcoming International fests & events
 * 📝 Event details and information display
 * 💡 Clean and responsive UI
 * ⚡ Fast static hosting using AWS
