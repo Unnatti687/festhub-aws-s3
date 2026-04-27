@@ -1,0 +1,189 @@
+/* Base & Variables */
+:root {
+  --neon-pink: #ff2a85;
+  --neon-blue: #00f0ff;
+  --neon-green: #39ff14;
+  --dark-bg: #090a0f;
+  --glass-bg: rgba(20, 22, 35, 0.7);
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: #fff;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-blue);
+}
+
+/* Canvas Particles */
+#particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-modal {
+  background: rgba(10, 12, 20, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* Typographic Highlights */
+.glow-text-pink {
+  text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+}
+.glow-text-blue {
+  text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+}
+
+/* 3D Flip Card Magic */
+.perspective-container {
+  perspective: 1500px;
+}
+
+.card-3d-wrapper {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.perspective-container:hover .card-3d-wrapper {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(145deg, #16192b, #0d0f1a);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(9, 10, 15, 0.3) 0%,
+    rgba(9, 10, 15, 0.6) 50%,
+    rgba(9, 10, 15, 1) 100%
+  );
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero-content {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Map Custom Styles */
+.leaflet-container {
+  background: #090a0f;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #1a1d2e;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background: #1a1d2e;
+}
+
+/* Button Hover Effects */
+button {
+  cursor: pointer;
+}
+
+/* Input Focus */
+input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 240, 255, 0.3);
+}
+
+/* Card Hover Glow */
+.card-3d-wrapper {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.perspective-container:hover .card-3d-wrapper {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .card-3d-wrapper {
+    height: 420px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}

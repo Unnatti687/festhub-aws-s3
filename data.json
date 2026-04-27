@@ -1,0 +1,86 @@
+{
+  "events": [
+    {
+      "id": "fest-1",
+      "name": "Coachella 2026",
+      "date": "Apr 10 - Apr 19, 2026",
+      "location": "Indio, California",
+      "venue": "Empire Polo Club",
+      "lat": 33.6803,
+      "lng": -116.2376,
+      "image": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1200&q=80",
+      "lineup": ["Dua Lipa", "Rüfüs Du Sol", "Tame Impala", "Fred Again..", "Peggy Gou"],
+      "tickets": [
+        { "tier": "General Admission", "price": 499 },
+        { "tier": "GA + Shuttle", "price": 599 },
+        { "tier": "VIP", "price": 1299 }
+      ],
+      "hotels": [
+        { "name": "Desert Oasis Resort", "distance": "2 miles away", "price": 250, "rating": 4.5 },
+        { "name": "Indio Inn", "distance": "0.5 miles away", "price": 180, "rating": 3.8 }
+      ],
+      "color": "pink"
+    },
+    {
+      "id": "fest-2",
+      "name": "Lollapalooza",
+      "date": "Aug 5 - Aug 8, 2026",
+      "location": "Chicago, Illinois",
+      "venue": "Grant Park",
+      "lat": 41.8762,
+      "lng": -87.6190,
+      "image": "https://images.unsplash.com/photo-1540039155732-684736382430?auto=format&fit=crop&w=1200&q=80",
+      "lineup": ["Odesza", "Billie Eilish", "Kendrick Lamar", "The 1975", "Lana Del Rey"],
+      "tickets": [
+        { "tier": "4-Day GA", "price": 385 },
+        { "tier": "4-Day GA+", "price": 725 },
+        { "tier": "4-Day VIP", "price": 1600 }
+      ],
+      "hotels": [
+        { "name": "Downtown Loop Hotel", "distance": "0.2 miles away", "price": 310, "rating": 4.8 },
+        { "name": "City Views Hostel", "distance": "1.5 miles away", "price": 85, "rating": 4.1 }
+      ],
+      "color": "blue"
+    },
+    {
+      "id": "fest-3",
+      "name": "Tomorrowland",
+      "date": "Jul 17 - Jul 26, 2026",
+      "location": "Boom, Belgium",
+      "venue": "De Schorre",
+      "lat": 51.0914,
+      "lng": 4.3831,
+      "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+      "lineup": ["Martin Garrix", "David Guetta", "Armin van Buuren", "Charlotte de Witte", "Tiësto"],
+      "tickets": [
+        { "tier": "Full Madness Pass", "price": 450 },
+        { "tier": "Magnificent Greens Pkg", "price": 550 },
+        { "tier": "Comfort Pass", "price": 850 }
+      ],
+      "hotels": [
+        { "name": "Antwerp Central Stays", "distance": "10 miles away", "price": 140, "rating": 4.2 },
+        { "name": "Brussels Grand", "distance": "18 miles away", "price": 200, "rating": 4.6 }
+      ],
+      "color": "green"
+    },
+    {
+      "id": "fest-4",
+      "name": "Glastonbury",
+      "date": "Jun 24 - Jun 28, 2026",
+      "location": "Pilton, Somerset, UK",
+      "venue": "Worthy Farm",
+      "lat": 51.1541,
+      "lng": -2.5855,
+      "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80",
+      "lineup": ["Coldplay", "Elton John", "Arctic Monkeys", "Dua Lipa", "Fontaines D.C."],
+      "tickets": [
+        { "tier": "General Admission", "price": 355 }
+      ],
+      "hotels": [
+        { "name": "Glastonbury Glamping", "distance": "On-site", "price": 600, "rating": 5.0 },
+        { "name": "Bristol B&B", "distance": "22 miles away", "price": 110, "rating": 4.3 }
+      ],
+      "color": "amber"
+    }
+  ]
+}
