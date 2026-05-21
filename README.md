@@ -34,7 +34,7 @@ This is an **MVP (Minimum Viable Product)** created for learning and experimenta
 
 * User authentication
 * Event registration system
-* Backend integration (Node.js)
+* Backend integration (Node.js/Database)
 * UI/UX enhancements 
 
 ## 🙌 Author
